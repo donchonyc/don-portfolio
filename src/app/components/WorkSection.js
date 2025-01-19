@@ -4,7 +4,7 @@ import WorkModal from "./WorkModal";
 import { useState } from "react";
 
 const WorkSection = () => {
-  const types = ["Selected Works", "Playground"];
+  const types = ["Work", "Playground"];
   const works = [
     {
       id: 1,

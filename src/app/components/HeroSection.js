@@ -52,7 +52,11 @@ const HeroSection = () => {
           href="/#work"
           className="absolute bottom-4 left-4 translate-y-72 pl-4"
         >
-          <img src="/arrow-bottom.svg" alt="Arrow" className="w-6 h-6" />
+          <img
+            src="/arrow-bottom.svg"
+            alt="Arrow"
+            className="w-6 h-6 hover:opacity-70"
+          />
         </a>
       </div>
     </div>

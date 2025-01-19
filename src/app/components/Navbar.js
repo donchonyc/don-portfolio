@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto py-2 p-8 md:p-12 lg:p-20">
           <Link
             href={"https://www.linkedin.com/in/donchony/"}
-            className="text-2xl md:text-3xl text-cloud font-normal"
+            className="text-2xl md:text-3xl text-cloud font-normal hover:text-cloud/70"
           >
             LinkedIn
           </Link>
@@ -56,7 +56,12 @@ const Navbar = () => {
               </li>
               <li>
                 <Link href="" className="hover:text-cloud/70">
-                  Resume
+                  Resume{" "}
+                  <img
+                    src="/diagonal-arrow.svg"
+                    alt="Diagonal Arrow"
+                    className="w-6 h-6 inline hover:opacity-70"
+                  />
                 </Link>
               </li>
             </ul>
