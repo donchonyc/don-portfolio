@@ -4,6 +4,7 @@ import WorkModal from "./WorkModal";
 import { useState } from "react";
 
 const WorkSection = () => {
+  const types = ["Selected Works", "Playground"];
   const works = [
     {
       id: 1,
@@ -16,7 +17,7 @@ const WorkSection = () => {
     },
     {
       id: 2,
-      title: "Work 2",
+      title: "Helping Figma's New UI",
       tags: ["figma", "react"],
       description: "This is a description of work 1.",
       fullDescription: "loreum ipsum",
@@ -34,7 +35,7 @@ const WorkSection = () => {
     },
     {
       id: 4,
-      title: "Work 4",
+      title: "Playground 2",
       tags: ["figma", "react"],
       description: "This is a description of work 1.",
       fullDescription: "loreum ipsum",
@@ -79,8 +80,17 @@ const WorkSection = () => {
 
   return (
     <section id="work" className="px-4 py-96 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold mb-12">Selected Works</h2>
-      <div className="grid grid-rows-1 gap-1">
+      <h2 className="text-3xl font-bold mb-12 grid grid-cols-2 gap-1">
+        {types.map((type, index) => (
+          <button
+            key={index}
+            className="hover:text-cloud transition-colors text-left"
+          >
+            {type}
+          </button>
+        ))}
+      </h2>
+      <div className="grid grid-cols-2 gap-1">
         {works.map((work, index) => (
           <button
             onClick={() => handleWorkClick(work.id)}
