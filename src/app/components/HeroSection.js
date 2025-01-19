@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+/*import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);*/
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
@@ -44,6 +47,14 @@ const HeroSection = () => {
         <b className="text-black">Don Cho</b> is a Product Designer at Studio
         Lupa, <span className="block">currently based in New York.</span>
       </h1>
+      <div>
+        <a
+          href="/#work"
+          className="absolute bottom-4 left-4 translate-y-72 pl-4"
+        >
+          <img src="/arrow-bottom.svg" alt="Arrow" className="w-6 h-6" />
+        </a>
+      </div>
     </div>
   );
 };
