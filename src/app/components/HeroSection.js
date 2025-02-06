@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 /*import gsap from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);*/
@@ -50,13 +51,9 @@ const HeroSection = () => {
       <div>
         <a
           href="/#work"
-          className="absolute bottom-4 left-4 translate-y-72 pl-4"
+          className="absolute bottom-4 left-4 translate-y-72 pl-1 md:pl-2 pr-1 md:pr-2 py-2 md:py-3 hover:opacity-70 transition-colors"
         >
-          <img
-            src="/arrow-bottom.svg"
-            alt="Arrow"
-            className="w-6 h-6 hover:opacity-70"
-          />
+          <ChevronDown className="w-6 h-6 hover:opacity-70" />
         </a>
       </div>
     </div>

@@ -19,7 +19,7 @@ export default function WorkModal({ work, onClose, onNext, onPrev }) {
     >
       <div
         ref={modalRef}
-        className="bg-fog rounded-lg max-w-4xl w-full max-h-[90dvh] overflow-y-auto p-8 h-10/12 border border-cloud"
+        className="bg-fog rounded-lg w-[80%] h-[90%] overflow-y-auto p-8 h-10/12 border border-cloud"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between mb-3">
@@ -33,7 +33,7 @@ export default function WorkModal({ work, onClose, onNext, onPrev }) {
             <X size={24} />
           </button>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 translate-x-8">
+        <div className="flex flex-col md:flex-row gap-6 translate-x-8 max-w-4xl text-wrap">
           <div>
             <p className="text-">{work.description}</p>
             <p>{work.fullDescription}</p>
